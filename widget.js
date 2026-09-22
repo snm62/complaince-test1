@@ -5419,13 +5419,22 @@ font-family: Archivo;
                 }
                 /* Reduced panel width on laptop screens */
                 @media (min-width: 1024px) and (max-width: 1439px) {
-                    :host { --widget-width: min(380px, 94vw); }
+                    :host { --widget-width: min(300px, 94vw); }
                 }
                 @media (min-width: 1440px) and (max-width: 1599px) {
-                    :host { --widget-width: min(400px, 94vw); }
+                    :host { --widget-width: min(320px, 94vw); }
                 }
                 @media (min-width: 1500px) {
-                    :host { --widget-width: min(400px, 94vw); }
+                    :host { --widget-width: min(320px, 94vw); }
+                }
+                /* Laptop screens: trim the empty space under the header action buttons
+                   (Reset Settings / Statement / Hide Interface) where they sit in a row
+                   rather than stacked vertically (stacking only happens at <=768px). */
+                @media (min-width: 1024px) and (max-width: 1599px) {
+                    .panel-header.accessbit-screenshot-header {
+                        padding-bottom: 12px !important;
+                        min-height: auto !important;
+                    }
                 }
 .accessbit-widget-panel .white-content-section .white-content-section {
                     overflow-y: visible !important;
@@ -11302,21 +11311,7 @@ input:checked + .slider::after {
             whiteContentSection.style.setProperty('scrollbar-width', 'thin', 'important');
             whiteContentSection.style.setProperty('scrollbar-color', 'rgba(0,0,0,0.35) transparent', 'important');
             whiteContentSection.style.setProperty('-ms-overflow-style', 'auto', 'important');
-            // DEBUG — remove after confirming scrollbar works
-            setTimeout(() => {
-                const el = whiteContentSection;
-                const cs = window.getComputedStyle(el);
-                console.log('[AccessBit Scrollbar Debug]', {
-                    overflowY: cs.overflowY,
-                    scrollbarWidth: cs.scrollbarWidth,
-                    height: el.offsetHeight,
-                    scrollHeight: el.scrollHeight,
-                    classes: el.className,
-                    inlineOverflowY: el.style.getPropertyValue('overflow-y'),
-                    inlineOverflowYPriority: el.style.getPropertyPriority('overflow-y'),
-                });
-            }, 2000);
-            const fullPanelHtml = this.getPanelHTML();
+const fullPanelHtml = this.getPanelHTML();
             const tempWrap = document.createElement('div');
             tempWrap.innerHTML = fullPanelHtml;
             const sectionEl = tempWrap.querySelector('.white-content-section');
