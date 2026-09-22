@@ -5429,9 +5429,13 @@ font-family: Archivo;
                 }
                 /* Laptop screens: trim the empty space under the header action buttons
                    (Reset Settings / Statement / Hide Interface) where they sit in a row
-                   rather than stacked vertically (stacking only happens at <=768px). */
-                @media (min-width: 1024px) and (max-width: 1599px) {
-                    .panel-header.accessbit-screenshot-header {
+                   rather than stacked vertically (stacking only happens at <=768px).
+                   Needs the .accessbit-panel-screenshot prefix: the bare
+                   .panel-header.accessbit-screenshot-header rule further down sets
+                   padding-bottom:54px !important at equal specificity, and would
+                   otherwise win on source order. */
+                @media (min-width: 1024px) {
+                    .accessbit-panel-screenshot .panel-header.accessbit-screenshot-header {
                         padding-bottom: 12px !important;
                         min-height: auto !important;
                     }
