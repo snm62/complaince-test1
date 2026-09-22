@@ -5262,8 +5262,8 @@ font-family: Archivo;
                 @media (min-width: 601px) and (max-width: 1280px) {
                     .accessbit-widget-panel {
                         position: fixed !important;
-                        width: min(576px, calc(100vw - 24px)) !important;
-                        max-width: min(576px, calc(100vw - 24px)) !important;
+                        width: min(540px, calc(100vw - 24px)) !important;
+                        max-width: min(540px, calc(100vw - 24px)) !important;
                         height: calc(100dvh - 30px) !important;
                         max-height: calc(100dvh - 30px) !important;
                         bottom: var(--widget-icon-bottom, 20px) !important;
@@ -5329,7 +5329,7 @@ font-family: Archivo;
                 /* STATE 2: DESKTOP FLOATING (min-width: 1281px) - vars set once by JS on load/settings */
                 @media (min-width: 1281px) {
                     .accessbit-widget-panel {
-                        width: 576px !important;
+                        width: 540px !important;
                         height: calc(100dvh - 40px) !important;
                         max-height: calc(100dvh - 40px) !important;
                         top: var(--panel-top, 20px) !important;
@@ -5419,13 +5419,13 @@ font-family: Archivo;
                 }
                 /* Reduced panel width on laptop screens */
                 @media (min-width: 1024px) and (max-width: 1439px) {
-                    :host { --widget-width: min(300px, 94vw); }
+                    :host { --widget-width: min(380px, 94vw); }
                 }
                 @media (min-width: 1440px) and (max-width: 1599px) {
-                    :host { --widget-width: min(320px, 94vw); }
+                    :host { --widget-width: min(400px, 94vw); }
                 }
                 @media (min-width: 1500px) {
-                    :host { --widget-width: min(320px, 94vw); }
+                    :host { --widget-width: min(400px, 94vw); }
                 }
                 /* Laptop screens: trim the empty space under the header action buttons
                    (Reset Settings / Statement / Hide Interface) where they sit in a row
@@ -5436,7 +5436,7 @@ font-family: Archivo;
                    otherwise win on source order. */
                 @media (min-width: 1024px) {
                     .accessbit-panel-screenshot .panel-header.accessbit-screenshot-header {
-                        padding-bottom: 12px !important;
+                        padding-bottom: 8px !important;
                         min-height: auto !important;
                     }
                 }
