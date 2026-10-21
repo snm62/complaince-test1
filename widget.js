@@ -5340,7 +5340,10 @@ font-family: Archivo;
                         border-radius: 16px !important;
                     }
                     .accessbit-widget-panel .panel-header {
-                        padding-bottom: 90px !important;
+                        padding-bottom: 28px !important;
+                    }
+                    .accessbit-widget-panel .panel-header .action-buttons {
+                        margin-bottom: 36px !important;
                     }
                     /* Desktop: keep circles aligned under the "A" of Adjust, shrink inter-circle gap to fit the padded card */
                     .accessbit-widget-panel .color-adjustments-picker-card .color-options {
