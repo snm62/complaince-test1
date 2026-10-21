@@ -5343,7 +5343,7 @@ font-family: Archivo;
                         padding-bottom: 28px !important;
                     }
                     .accessbit-widget-panel .panel-header .action-buttons {
-                        margin-bottom: 36px !important;
+                        margin-bottom: 16px !important;
                     }
                     /* Desktop: keep circles aligned under the "A" of Adjust, shrink inter-circle gap to fit the padded card */
                     .accessbit-widget-panel .color-adjustments-picker-card .color-options {
@@ -6476,10 +6476,16 @@ font-family: Archivo;
                         margin-top: 57px !important;
                         padding-right: 140px !important;
                     }
+                    .accessbit-widget-panel .panel-header .action-buttons {
+                        margin-bottom: 16px !important;
+                    }
                 }
 
                 /* Apply some of the same spacing tweaks for small tablets/base screens (769px–1280px) */
                 @media (max-width: 1280px) and (min-width: 769px) {
+                    .accessbit-widget-panel .panel-header .action-buttons {
+                        margin-bottom: 16px !important;
+                    }
                     .accessbit-widget-panel .white-content-section .content-adjustments-title,
                     .accessbit-widget-panel .white-content-section .color-adjustments-title,
                     .accessbit-widget-panel .white-content-section .interface-controls-title,
