@@ -5329,7 +5329,7 @@ font-family: Archivo;
                 /* STATE 2: DESKTOP FLOATING (min-width: 1281px) - vars set once by JS on load/settings */
                 @media (min-width: 1281px) {
                     .accessbit-widget-panel {
-                        width: 540px !important;
+                        width: 432px !important;
                         height: calc(100dvh - 40px) !important;
                         max-height: calc(100dvh - 40px) !important;
                         top: var(--panel-top, 20px) !important;
@@ -5338,6 +5338,9 @@ font-family: Archivo;
                         transform: none !important;
                         bottom: auto !important;
                         border-radius: 16px !important;
+                    }
+                    .accessbit-widget-panel .panel-header {
+                        padding-bottom: 28px !important;
                     }
                 }
                 /* [Ultra-wide: > 1921px] – panel fills viewport height, no small box */
@@ -6434,11 +6437,12 @@ font-family: Archivo;
                     .accessbit-widget-panel .widget-header .reset-settings-icon svg { width: 14px !important; height: 14px !important; }
                 }
 
-                /* Tablet (769px–1025px): reduce header-center top margin to match desktop visual weight */
+                /* Tablet (769px–1025px): keep h2 below language selector and offset right to avoid it */
                 @media (max-width: 1025px) and (min-width: 769px) {
                     .accessbit-widget-panel .header-center,
                     .accessbit-widget-panel .panel-header .header-center {
-                        margin-top: 20px !important;
+                        margin-top: 57px !important;
+                        padding-right: 140px !important;
                     }
                 }
 
