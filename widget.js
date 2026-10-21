@@ -5536,16 +5536,16 @@ font-family: Archivo;
                     .accessbit-widget-panel .panel-content .profile-item:has(#high-contrast),
                     .accessbit-widget-panel .panel-content .profile-item:has(#high-saturation),
                     .accessbit-widget-panel .panel-content .profile-item:has(#low-saturation),
-                    .accessbit-widget-panel .panel-content .profile-item:has(#monochrome) { max-width: min(257px, 100%) !important; }
+                    .accessbit-widget-panel .panel-content .profile-item:has(#monochrome) { max-width: 100% !important; }
                     .accessbit-widget-panel .profile-item:has(#dark-contrast),
                     .accessbit-widget-panel .profile-item:has(#light-contrast),
                     .accessbit-widget-panel .profile-item:has(#high-contrast),
                     .accessbit-widget-panel .profile-item:has(#high-saturation),
                     .accessbit-widget-panel .profile-item:has(#low-saturation),
-                    .accessbit-widget-panel .profile-item:has(#monochrome) { width: 257px !important; max-width: min(257px, 100%) !important; }
-                    /* Color Adjustments section: widen so 2×257px columns + gap fit; grid columns fixed to 257px to prevent clipping */
-                    .accessbit-widget-panel .color-adjustments-section { max-width: min(526px, 100%) !important; overflow-x: visible !important; }
-                    .accessbit-widget-panel .color-adjustments-toggles-grid { grid-template-columns: 257px 257px !important; }
+                    .accessbit-widget-panel .profile-item:has(#monochrome) { width: 100% !important; max-width: 100% !important; }
+                    /* Color Adjustments section: fluid 2-column grid that fills the padded content area */
+                    .accessbit-widget-panel .color-adjustments-section { max-width: 100% !important; overflow-x: visible !important; }
+                    .accessbit-widget-panel .color-adjustments-toggles-grid { grid-template-columns: 1fr 1fr !important; }
                     .accessbit-widget-panel .profile-item:has(#dark-contrast),
                     .accessbit-widget-panel .profile-item:has(#light-contrast),
                     .accessbit-widget-panel .profile-item:has(#high-contrast),
@@ -5560,7 +5560,7 @@ font-family: Archivo;
                     .accessbit-widget-panel .panel-content .profile-item:has(#stop-animation),
                     .accessbit-widget-panel .panel-content .profile-item:has(#reading-mask),
                     .accessbit-widget-panel .panel-content .profile-item:has(#highlight-focus),
-                    .accessbit-widget-panel .panel-content .profile-item:has(#highlight-hover) { max-width: min(257px, 100%) !important; }
+                    .accessbit-widget-panel .panel-content .profile-item:has(#highlight-hover) { max-width: 100% !important; }
                     .accessbit-widget-panel .profile-item:has(#mute-sound),
                     .accessbit-widget-panel .profile-item:has(#hide-images),
                     .accessbit-widget-panel .profile-item:has(#read-mode),
@@ -5568,19 +5568,19 @@ font-family: Archivo;
                     .accessbit-widget-panel .profile-item:has(#stop-animation),
                     .accessbit-widget-panel .profile-item:has(#reading-mask),
                     .accessbit-widget-panel .profile-item:has(#highlight-focus),
-                    .accessbit-widget-panel .profile-item:has(#highlight-hover) { width: 257px !important; max-width: min(257px, 100%) !important; }
-                    /* Desktop: big black cursor, big white cursor = 257px width */
+                    .accessbit-widget-panel .profile-item:has(#highlight-hover) { width: 100% !important; max-width: 100% !important; }
+                    /* Desktop: big black cursor, big white cursor */
                     .accessbit-widget-panel .panel-content .profile-item:has(#big-black-cursor),
-                    .accessbit-widget-panel .panel-content .profile-item:has(#big-white-cursor) { max-width: min(257px, 100%) !important; }
+                    .accessbit-widget-panel .panel-content .profile-item:has(#big-white-cursor) { max-width: 100% !important; }
                     .accessbit-widget-panel .profile-item:has(#big-black-cursor),
-                    .accessbit-widget-panel .profile-item:has(#big-white-cursor) { width: 257px !important; max-width: min(257px, 100%) !important; }
-                    /* Cursor cards grid: widen so 2×257px columns + gap fit; grid columns fixed to 257px */
-                    .accessbit-widget-panel .cursor-cards-grid { max-width: min(526px, 100%) !important; grid-template-columns: 257px 257px !important; }
+                    .accessbit-widget-panel .profile-item:has(#big-white-cursor) { width: 100% !important; max-width: 100% !important; }
+                    /* Cursor cards grid: fluid 2-column grid */
+                    .accessbit-widget-panel .cursor-cards-grid { max-width: 100% !important; grid-template-columns: 1fr 1fr !important; }
                     .accessbit-widget-panel .profile-item:has(#big-black-cursor),
                     .accessbit-widget-panel .profile-item:has(#big-white-cursor) { overflow: visible !important; overflow-x: visible !important; }
-                    /* Interface Controls section: widen so 2×257px columns + gap fit; grid columns fixed to 257px to prevent clipping */
-                    .accessbit-widget-panel .interface-controls-section { max-width: min(526px, 100%) !important; overflow-x: visible !important; }
-                    .accessbit-widget-panel .interface-controls-grid { grid-template-columns: 257px 257px !important; }
+                    /* Interface Controls section: fluid 2-column grid */
+                    .accessbit-widget-panel .interface-controls-section { max-width: 100% !important; overflow-x: visible !important; }
+                    .accessbit-widget-panel .interface-controls-grid { grid-template-columns: 1fr 1fr !important; }
                     .accessbit-widget-panel .profile-item:has(#mute-sound),
                     .accessbit-widget-panel .profile-item:has(#hide-images),
                     .accessbit-widget-panel .profile-item:has(#read-mode),
@@ -5592,15 +5592,15 @@ font-family: Archivo;
                     /* Desktop: Adjust Text Colors, Adjust Title Colors, Adjust Background Colors = 528px width */
                     .accessbit-widget-panel .panel-content #adjust-text-colors,
                     .accessbit-widget-panel .panel-content #adjust-title-colors,
-                    .accessbit-widget-panel .panel-content #adjust-bg-colors { max-width: min(528px, 100%) !important; }
+                    .accessbit-widget-panel .panel-content #adjust-bg-colors { max-width: 100% !important; }
                     .accessbit-widget-panel #adjust-text-colors,
                     .accessbit-widget-panel #adjust-title-colors,
-                    .accessbit-widget-panel #adjust-bg-colors { width: 528px !important; max-width: min(528px, 100%) !important; }
-                    /* Desktop: Useful Links = 528px width */
+                    .accessbit-widget-panel #adjust-bg-colors { width: 100% !important; max-width: 100% !important; }
+                    /* Desktop: Useful Links = full width */
                     .accessbit-widget-panel .panel-content .useful-links-card,
-                    .accessbit-widget-panel .panel-content .profile-item.useful-links-card { max-width: min(528px, 100%) !important; }
+                    .accessbit-widget-panel .panel-content .profile-item.useful-links-card { max-width: 100% !important; }
                     .accessbit-widget-panel .useful-links-card,
-                    .accessbit-widget-panel .profile-item.useful-links-card { width: 528px !important; max-width: min(528px, 100%) !important; }
+                    .accessbit-widget-panel .profile-item.useful-links-card { width: 100% !important; max-width: 100% !important; }
                 }
                 .accessbit-widget-panel .profile-item .profile-info,
                 .accessbit-widget-panel .profile-item .profile-item-icon { overflow: visible !important; }
