@@ -5329,7 +5329,7 @@ font-family: Archivo;
                 /* STATE 2: DESKTOP FLOATING (min-width: 1281px) - vars set once by JS on load/settings */
                 @media (min-width: 1281px) {
                     .accessbit-widget-panel {
-                        width: 432px !important;
+                        width: 540px !important;
                         height: calc(100dvh - 40px) !important;
                         max-height: calc(100dvh - 40px) !important;
                         top: var(--panel-top, 20px) !important;
@@ -37790,7 +37790,7 @@ const controls = this.shadowRoot.getElementById('letter-spacing-controls');
                
                 this.updateSelectedIcon(iconValue);
             } else {
-                console.warn('[CUSTOMIZATION] No icon found in customization data. Available keys:', Object.keys(customizationData));
+                console.debug('[CUSTOMIZATION] No icon found in customization data. Available keys:', Object.keys(customizationData));
             }
             
             // Support both selectedIconName and triggerIconName field names
