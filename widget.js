@@ -5340,7 +5340,11 @@ font-family: Archivo;
                         border-radius: 16px !important;
                     }
                     .accessbit-widget-panel .panel-header {
-                        padding-bottom: 28px !important;
+                        padding-bottom: 42px !important;
+                    }
+                    /* Desktop: color picker circles must start from left edge so they fit within the padded card */
+                    .accessbit-widget-panel .color-adjustments-picker-card .color-options {
+                        padding-left: 0 !important;
                     }
                 }
                 /* [Ultra-wide: > 1921px] – panel fills viewport height, no small box */
