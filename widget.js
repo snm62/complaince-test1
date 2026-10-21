@@ -5340,11 +5340,36 @@ font-family: Archivo;
                         border-radius: 16px !important;
                     }
                     .accessbit-widget-panel .panel-header {
-                        padding-bottom: 42px !important;
+                        padding-bottom: 58px !important;
                     }
-                    /* Desktop: color picker circles must start from left edge so they fit within the padded card */
+                    /* Desktop: keep circles aligned under the "A" of Adjust, shrink inter-circle gap to fit the padded card */
                     .accessbit-widget-panel .color-adjustments-picker-card .color-options {
-                        padding-left: 0 !important;
+                        padding-left: 55px !important;
+                        gap: 7px !important;
+                    }
+                    /* Desktop: show visible scrollbar on the scroll container */
+                    .accessbit-widget-panel > .white-content-section,
+                    .accessbit-widget-panel > .panel-content,
+                    .accessbit-widget-panel > .accessbit-widget-content {
+                        scrollbar-width: thin !important;
+                        scrollbar-color: rgba(0,0,0,0.25) transparent !important;
+                    }
+                    .accessbit-widget-panel > .white-content-section::-webkit-scrollbar,
+                    .accessbit-widget-panel > .panel-content::-webkit-scrollbar,
+                    .accessbit-widget-panel > .accessbit-widget-content::-webkit-scrollbar {
+                        display: block !important;
+                        width: 6px !important;
+                    }
+                    .accessbit-widget-panel > .white-content-section::-webkit-scrollbar-thumb,
+                    .accessbit-widget-panel > .panel-content::-webkit-scrollbar-thumb,
+                    .accessbit-widget-panel > .accessbit-widget-content::-webkit-scrollbar-thumb {
+                        background: rgba(0,0,0,0.25) !important;
+                        border-radius: 3px !important;
+                    }
+                    .accessbit-widget-panel > .white-content-section::-webkit-scrollbar-track,
+                    .accessbit-widget-panel > .panel-content::-webkit-scrollbar-track,
+                    .accessbit-widget-panel > .accessbit-widget-content::-webkit-scrollbar-track {
+                        background: transparent !important;
                     }
                 }
                 /* [Ultra-wide: > 1921px] – panel fills viewport height, no small box */
